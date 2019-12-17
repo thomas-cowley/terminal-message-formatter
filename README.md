@@ -8,9 +8,6 @@ It's a bash script that takes messages as parameter and outputs them in a pretty
 # usage
 move to the holding directory of the script
 `./terminalMessageFormatter.sh message1 message2 message3 ...`
-
-# output
-picture
 ![running the script](./message-formatter-demonstration.png)
 
 # features
