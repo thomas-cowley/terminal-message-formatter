@@ -11,8 +11,8 @@ move to the holding directory of the script
 
 # output
 picture
-![running the script](https://raw.githubusercontent.com/thomas-cowley/terminal-message-formatter/branch/message-formatter-demonstration.png)
+![running the script](./message-formatter-demonstration.png)
 
 # features
 Script output scales to terminal window width:
-![demonstation](https://raw.githubusercontent.com/thomas-cowley/terminal-message-formatter/branch/message-formatter-scaling-demonstration.png)
+![demonstation](./message-formatter-scaling-demonstration.png)
