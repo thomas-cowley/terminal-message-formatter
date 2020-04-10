@@ -1,16 +1,17 @@
 # terminal-message-formatter
-A message formatter for your terminal.  
-It's a bash script that takes messages as parameters and outputs them, as shown below.
+A message formatter for your terminal.
+A bash script that prints out argument-given messages, as depicted below.
 
 # initialisation
-move to the holding directory of the script  
-`chmod 700 terminalMessageFormatter.sh`
+1. Move to the directory in which the script is located: `cd ~/Downloads`
+2. Ensure the script has sufficient permissions: `chmod 700 terminalMessageFormatter.sh`
 
 # usage
-move to the holding directory of the script  
+1. Move to the directory in which the script is located: `cd ~/Downloads`
+2. Execute the script with your messages as arguments:  
 `./terminalMessageFormatter.sh message1 message2 message3 ...`  
 ![running the script](./message-formatter-demonstration.png)
 
 # features
-Script output scales to terminal window width:
+Posted messages scale to the window width of the terminal session:
 ![demonstation](./message-formatter-scaling-demonstration.png)
