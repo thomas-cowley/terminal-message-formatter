@@ -11,9 +11,9 @@ A bash script that prints out argument-given messages, as depicted below.
 2. Execute the script with your messages as arguments:<br/>
 `./terminalMessageFormatter.sh message1 message2 message3 ...`<br/>
 
-![running the script](./images/message-formatter.png)
+<img src="./images/message-formatter.png" width="579">
 
 # Features
-Posted messages scale to the window width of the terminal session:
+Printed messages scale to the window width of the terminal session:
 
-![demonstation](./images/message-formatter-width-scaling.png)
+<img src="./images/message-formatter-width-scaling.png" width="721">
