@@ -9,9 +9,9 @@ A bash script that prints out argument-given messages, as depicted below.
 # usage
 1. Move to the directory in which the script is located: `cd ~/Downloads`
 2. Execute the script with your messages as arguments:<br/>
-`./terminalMessageFormatter.sh message1 message2 message3 ...`  
-![running the script](./message-formatter-demonstration.png)
+`./terminalMessageFormatter.sh message1 message2 message3 ...`<br/>
+![running the script](./images/message-formatter.png)
 
 # features
 Posted messages scale to the window width of the terminal session:
-![demonstation](./message-formatter-scaling-demonstration.png)
+![demonstation](./images/message-formatter-width-scaling.png)
