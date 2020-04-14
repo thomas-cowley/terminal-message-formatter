@@ -1,37 +1,44 @@
 #!/bin/bash
 
-function messageLong () {
-  # $1 is first parameter, message
-  # $2 is second parameter, padder
+function generateSingleMessage () {
+  # $1 is first parameter, representing the message
+  # $2 is second parameter, representing the padder
+  message=$1;
+  padder=$2;
+
+  # calculate padding first and last widths
+  paddingHalfWidth=($(tput cols)-${#message})/2;
 
   # print first half of the padder
-  for (( i=0; i < ($(tput cols)-${#1})/2; i++)); do
-    printf "$2";
+  for (( i=0; i < $paddingHalfWidth; i++)); do
+    printf "$padder";
   done
 
   # print the message given
-  printf "$1";
+  printf "$message";
   
   # print the second half of the padding
-  for (( i=0; i < ($(tput cols)-${#1})/2; i++)); do
-    printf "$2";
+  for (( i=0; i < $paddingHalfWidth; i++)); do
+    printf "$padder";
   done
 }
 
-echo ""; # line break for prettier formatting
-
-# Top line here
-messageLong " Useful Commands and Aliases " "=";
+# line break for formatting
 echo "";
 
-# print out all parameters if this is desired as an external program
+# Start message goes here
+generateSingleMessage " Useful Commands and Aliases " "=";
+echo "";
+
+# print out all parameters if this is called with parameters
 for arg; do
-  messageLong "$arg" " ";
+  generateSingleMessage "$arg" " ";
   echo "";
 done
 
-# Final line here
-messageLong " Have a good day! " "=";
+# End message goes here
+generateSingleMessage " Have a good day! " "=";
 echo "";
 
-echo ""; # line break for prettier formatting
+# line break for formatting
+echo "";
