@@ -3,7 +3,7 @@ A message formatter for your terminal.<br/>
 A bash script that prints out argument-given messages, as depicted below.
 
 # Initialisation
-1. Download the script
+1. Download the script using the following link: [project zip download](https://github.com/tmcowley/terminal-message-formatter/archive/master.zip)
 2. Move to the directory in which the script is located: for example: `cd ~/Downloads`
 3. Ensure the script has sufficient permissions: `chmod 700 terminalMessageFormatter.sh`
 
