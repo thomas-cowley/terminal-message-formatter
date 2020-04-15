@@ -3,8 +3,9 @@ A message formatter for your terminal.<br/>
 A bash script that prints out argument-given messages, as depicted below.
 
 # Initialisation
-1. Move to the directory in which the script is located: `cd ~/Downloads`
-2. Ensure the script has sufficient permissions: `chmod 700 terminalMessageFormatter.sh`
+1. Download the script
+2. Move to the directory in which the script is located: for example: `cd ~/Downloads`
+3. Ensure the script has sufficient permissions: `chmod 700 terminalMessageFormatter.sh`
 
 # Usage
 1. Move to the directory in which the script is located: `cd ~/Downloads`
