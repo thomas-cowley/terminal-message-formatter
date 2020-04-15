@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# generates a line long padded message
+# arg1 = message, arg2 = padder
+# for example, called with "test" and "=" would render:
+# |===== test =====|
 function generateSingleMessage () {
   # $1 is first parameter, representing the message
   # $2 is second parameter, representing the padder
@@ -10,15 +14,15 @@ function generateSingleMessage () {
   paddingHalfWidth=($(tput cols)-${#message})/2;
 
   # print first half of the padder
-  for (( i=0; i < $paddingHalfWidth; i++)); do
+  for ((i=0; i < $paddingHalfWidth; i++)); do
     printf "$padder";
   done
 
-  # print the message given
+  # print the given message
   printf "$message";
   
-  # print the second half of the padding
-  for (( i=0; i < $paddingHalfWidth; i++)); do
+  # print second half of the padding
+  for ((i=0; i < $paddingHalfWidth; i++)); do
     printf "$padder";
   done
 }
@@ -26,7 +30,7 @@ function generateSingleMessage () {
 # line break for formatting
 echo "";
 
-# Start message goes here
+# start message goes here
 generateSingleMessage " Useful Commands and Aliases " "=";
 echo "";
 
@@ -36,7 +40,7 @@ for arg; do
   echo "";
 done
 
-# End message goes here
+# end message goes here
 generateSingleMessage " Have a good day! " "=";
 echo "";
 
