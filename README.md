@@ -1,6 +1,6 @@
 # terminal-message-formatter
 A message formatter for your terminal.<br/>
-A bash script that prints out argument-given messages, as depicted below.
+A bash script that prints out argument-given messages, as depicted below.<br/>
 For Mac-OS and Linux based Machines.
 
 # Initialisation
